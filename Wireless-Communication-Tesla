@@ -1,0 +1,20 @@
+This is Tesla's patent for a secure/selective wireless signaling system — essentially an early method for tuning and "locking" radio communications so that only the intended receiver responds, and unauthorized listeners can't intercept or interfere with the signal. Here's how it works, explained in my own words:
+The Core Problem Tesla Was Solving
+In early wireless telegraphy, a transmitter would send a signal at one specific frequency, and a receiver tuned to that same frequency would pick it up. The issue: this was easy to disturb or spy on. Any strong nearby electrical disturbance (or another operator's harmonics) could trigger false signals, and there was no privacy — anyone with a receiver tuned to that frequency could eavesdrop. Tesla noted that as receivers became more sensitive (needed for long distances), they became more vulnerable to this interference, not less.
+Tesla's Solution: Multi-Frequency "Combination Lock"
+Instead of using one frequency to trigger a receiver, Tesla's system requires two or more distinct frequencies to arrive together (in a specific combination) before the receiver actually activates. Think of it like a combination lock — a single "correct" signal won't open it; you need multiple matching pieces working in concert.
+At the transmitting station:
+
+Two (or more) separate oscillating circuits are built, each generating a distinct wave frequency
+A rotating toothed disk mechanism periodically discharges each circuit in a controlled sequence
+The operator can adjust both the frequencies used and the timing/order in which pulses are sent — this ordering itself becomes part of the "code"
+
+At the receiving station:
+
+Multiple separate receiving circuits are set up, each tuned to respond exclusively to one of the transmitted frequencies
+Each receiving circuit connects to a relay (an electromechanical switch)
+Critically, the final output relay only activates if all the individual relays trigger together — meaning the receiver only "hears" the message if it gets the correct combination of frequencies in the correct pattern
+
+If a stray disturbance hits only one of the receiving circuits (which is common with random interference), the final relay stays inactive, because it requires joint/simultaneous action across all the tuned circuits. This makes the system resistant to noise and much harder to eavesdrop on or spoof.
+Variations Tesla Included
+The patent describes several alternate hardware configurations (Figs. 3-5) for generating multiple frequency classes using just a single circuit — via rotating disks that intermittently alter inductance/capacitance, effectively creating rapid-fire variations in the wave characteristics rather than needing fully separate transmitter circuits.
